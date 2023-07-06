@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+.banner{
+    padding: 90px 5px 0 5px;
+    width: 15%;
+    height: 40%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h3{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px black;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 50vh;
+    flex-direction: column;
+    gap: 6px;
+    margin: auto;
+    margin-top: 5%;
+}
+
+button{
+    position: relative;
+    left:16rem;
+    width: 4rem;
+    height: 1.5rem;
+    border-radius: 12px;
+    padding: 2px;
+    background-color: rgb(146, 7, 7);
+    border-width: 0;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+input{
+    background-color:rgba(255, 253, 253, 0.692) ;
+    color:rgb(53, 53, 53);
+    border:0;
+    height: 1.4rem;
+}
+
+::placeholder {
+    color:rgb(53, 53, 53) !important;
+}
+
+textarea{
+    background-color:rgba(255, 253, 253, 0.692) ;
+    color:rgb(53, 53, 53);
+    border:0;
+}
+body{
+    background-image: url(./fondo.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.pie{
+    height: 5vw;
+    width: 100%;
+    background-color: rgb(58, 58, 58);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 14px;
+    flex-direction: column;
+    padding: 15px;
+    position:fixed
+}
+
+#gemed{
+    font-weight:lighter;
+    letter-spacing: 2px;
+}
+
+#gemedotro{
+    font-weight:bolder;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+small{
+    margin: 10px;
+}
+
+@media (max-width: 768px){
+    body{
+        background-image: url(./2.png);
+        background-attachment: fixed;
+    }
+    .pie{ 
+        font-size: 10px;
+        height: 8vh;
+    }
+
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 35rem;
+        gap: 6px;
+    }
+
+    input{
+        width:15rem;
+    }
+
+    textarea{
+        width:15rem;
+    }
+
+    button{
+        left:5.4rem;
+        height: 1;
+        width: 3;
+    }
+}
